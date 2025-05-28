@@ -165,7 +165,7 @@ h6 {
 
 /* PHP Email Form Messages
 ------------------------------*/
-.php-email-form .error-message {
+.email-form .error-message {
   display: none;
   background: #df1529;
   color: #ffffff;
@@ -175,7 +175,7 @@ h6 {
   font-weight: 600;
 }
 
-.php-email-form .sent-message {
+.email-form .sent-message {
   display: none;
   color: #ffffff;
   background: #059652;
@@ -185,7 +185,7 @@ h6 {
   font-weight: 600;
 }
 
-.php-email-form .loading {
+.email-form .loading {
   display: none;
   background: var(--surface-color);
   text-align: center;
@@ -193,7 +193,7 @@ h6 {
   margin-bottom: 24px;
 }
 
-.php-email-form .loading:before {
+.email-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -202,10 +202,10 @@ h6 {
   margin: 0 10px -6px 0;
   border: 3px solid var(--accent-color);
   border-top-color: var(--surface-color);
-  animation: php-email-form-loading 1s linear infinite;
+  animation: email-form-loading 1s linear infinite;
 }
 
-@keyframes php-email-form-loading {
+@keyframes email-form-loading {
   0% {
     transform: rotate(0deg);
   }
@@ -1286,19 +1286,19 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Appointment Section
+# agenda Section
 --------------------------------------------------------------*/
-.appointment .php-email-form {
+.agenda .email-form {
   width: 100%;
 }
 
-.appointment .php-email-form .form-group {
+.agenda .email-form .form-group {
   padding-bottom: 8px;
 }
 
-.appointment .php-email-form input,
-.appointment .php-email-form textarea,
-.appointment .php-email-form select {
+.agenda .email-form input,
+.agenda .email-form textarea,
+.agenda .email-form select {
   color: var(--default-color);
   background-color: var(--surface-color);
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
@@ -1308,28 +1308,28 @@ section,
   padding: 10px !important;
 }
 
-.appointment .php-email-form input:focus,
-.appointment .php-email-form textarea:focus,
-.appointment .php-email-form select:focus {
+.agenda .email-form input:focus,
+.agenda .email-form textarea:focus,
+.agenda .email-form select:focus {
   border-color: var(--accent-color);
 }
 
-.appointment .php-email-form input::placeholder,
-.appointment .php-email-form textarea::placeholder,
-.appointment .php-email-form select::placeholder {
+.agenda .email-form input::placeholder,
+.agenda .email-form textarea::placeholder,
+.agenda .email-form select::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-.appointment .php-email-form input,
-.appointment .php-email-form select {
+.agenda .email-form input,
+.agenda .email-form select {
   height: 44px;
 }
 
-.appointment .php-email-form textarea {
+.agenda .email-form textarea {
   padding: 10px 12px;
 }
 
-.appointment .php-email-form button[type=submit] {
+.agenda .email-form button[type=submit] {
   background: var(--accent-color);
   border: 0;
   padding: 10px 35px;
@@ -1338,7 +1338,7 @@ section,
   border-radius: 4px;
 }
 
-.appointment .php-email-form button[type=submit]:hover {
+.agenda .email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color) 90%, white 15%);
 }
 
@@ -1836,7 +1836,7 @@ section,
   font-size: 14px;
 }
 
-.contact .php-email-form {
+.contact .email-form {
   background-color: var(--surface-color);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   height: 100%;
@@ -1844,14 +1844,14 @@ section,
 }
 
 @media (max-width: 575px) {
-  .contact .php-email-form {
+  .contact .email-form {
     padding: 20px;
   }
 }
 
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email],
-.contact .php-email-form textarea {
+.contact .email-form input[type=text],
+.contact .email-form input[type=email],
+.contact .email-form textarea {
   font-size: 14px;
   padding: 10px 15px;
   box-shadow: none;
@@ -1861,19 +1861,19 @@ section,
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
-.contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
-.contact .php-email-form textarea:focus {
+.contact .email-form input[type=text]:focus,
+.contact .email-form input[type=email]:focus,
+.contact .email-form textarea:focus {
   border-color: var(--accent-color);
 }
 
-.contact .php-email-form input[type=text]::placeholder,
-.contact .php-email-form input[type=email]::placeholder,
-.contact .php-email-form textarea::placeholder {
+.contact .email-form input[type=text]::placeholder,
+.contact .email-form input[type=email]::placeholder,
+.contact .email-form textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .email-form button[type=submit] {
   color: var(--contrast-color);
   background: var(--accent-color);
   border: 0;
@@ -1882,7 +1882,7 @@ section,
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
